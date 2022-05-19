@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drowsiness Detection System</title>
+        <link rel = "icon" href = "{% static  'img/logo.png' %}" type = "image/x-icon"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        <style type="text/css">
+          .card-about {
+            text-align: justify;
+          }
+
+          .card-text {
+            font-family: Helvetica;
+            font-stretch: extra-expanded;
+            font-weight: 700;
+          }
+        </style>
+    </head>
+    <body>
+    	<div class="div-head">
+        	<h1>Group no :- 8</h1>
+            <h2>Driver Drowsiness Detection</h2>
+            <h3>Under the Guidance of<br>
+                Mr M. G. Rathi</h3>
+                <div class="card-body">
+                    <img src="{% static 'img/RATHI-Sir.jpeg' %}">
+                    
+                </div>
+        	<div class="jumbotron jumb-width">
+  				<p class="lead">We are six creatures in BTECH IT from Walchand College of Engineering Sangli, who have a passion for developing and building stuffs.</p>
+  				<hr class="my-4">
+  				<p class="lead">If you have any queries or suggestions, please feel free to contact one of us and we would be more than happy to have a chat with you.</p>
+  				</div>
+          <div class="row">
+            
+            <div class="col-sm-6">
+              <div class="card card-style" style = "background-color: rgba(84, 104, 135, 0.3)">
+                <div class="card-body">
+                  <img src="{% static  'img/ROHIT-JADHAV.jpg' %}">
+                  <p class="card-text">Rohit Jadhav</p>
+                  <p class="card-text">PRN: 2018BTEIT00020</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card card-style" style = "background-color: rgba(84, 104, 135, 0.3)">
+                  <div class="card-body" >
+                    <img src="{% static  'img/Rutuja-Arwade.jpg' %}">
+                    <p class="card-text">Rutuja Arwade</p>
+                    <p class="card-text">PRN: 2018BTEIT00038</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card card-style" style = "background-color: rgba(84, 104, 135, 0.3)">
+                <div class="card-body" >
+                  <img src="{% static 'img/NIKITA-PATIL.jpg' %}">
+                  <p class="card-text">Nikita Patil</p>
+                  <p class="card-text">PRN: 2018BTEIT00022</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card card-style" style = "background-color: rgba(84, 104, 135, 0.3)">
+                <div class="card-body">
+                  <img src="{% static 'img/SHUBHAM_JADHAV.jpeg' %}">
+                  <p class="card-text">Shubham Jadhav</p>
+                  <p class="card-text">PRN: 2018BTEIT00032</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+                <div class="card card-style" style = "background-color: rgba(84, 104, 135, 0.3)">
+                  <div class="card-body" >
+                    <img src="{% static 'img/PIYUSH-CHOUGULE.jpeg' %}">
+                    <p class="card-text">Piyush Chaugule</p>
+                    <p class="card-text">PRN: 2018BTEIT00003</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-6">
+              <div class="card card-style" style = "background-color: rgba(84, 104, 135, 0.3)">
+                <div class="card-body">
+                  <img src="{% static  'img/VAIBHAV-JADHAV.jpg' %}">
+                  <p class="card-text">Vaibhav Jadhav</p>
+                  <p class="card-text">PRN: 2018BTEIT00053</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <footer class="footer">
+        <div>
+          <span><a onclick= "location.href='{% url 'last' %}'" class="btn btn-outline-warning btn-lg" style = "text-decoration: none;">Let's Start</a></span>
+        </div>
+      </footer>
+    </body>
+</html>
+<script>
+function sendEmail1() 
+{
+    window.location = "mailto:sawon1708197@gmail.com";
+}
+
+function sendEmail2() 
+{
+    window.location = "mailto:souvikghosh199831@gmail.com";
+}
+</script>
